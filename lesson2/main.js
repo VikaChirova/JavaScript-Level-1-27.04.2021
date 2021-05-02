@@ -34,61 +34,58 @@ alert(c);
       switch (a) {
         case 0:
           alert("Вы ввели 0!");
-          break;
+          
         case 1:
           alert("Вы ввели 1!");
-          break;
+          
         case 2:
           alert("Вы ввели 2!");
-          break;
+          
         case 3:
           alert("Вы ввели 3!");
-          break;
+          
         case 4:
           alert("Вы ввели 4!");
-          break;
+          
         case 5:
           alert("Вы ввели 5!");
-          break;
+          
         case 6:
           alert("Вы ввели 6!");
-          break;
+          
         case 7:
           alert("Вы ввели 7!");
-          break;
+          
         case 8:
           alert("Вы ввели 8!");
-          break;
+          
         case 9:
           alert("Вы ввели 9!");
-          break;
+          
         case 10:
           alert("Вы ввели 10!");
-          break;
+          
         case 11:
           alert("Вы ввели 11!");
-          break;
+          
         case 12:
           alert("Вы ввели 12!");
-          break;
+         
         case 13:
           alert("Вы ввели 13!");
-          break;
+          
         case 14:
           alert("Вы ввели 14!");
-          break;
+        
         case 15:
           alert("Вы ввели 15!");
-          break;
+         
         default:
           alert("Вы вышли за рамки [0..15]!");
-          break;
+         
       }
 
 //ЗАДАНИЕ №5
-var a = parseInt(prompt('Введите число a'));  
-var b = parseInt(prompt('Введите число b'));
-
    function plus(a, b) {
       return a + b;
       }
@@ -104,23 +101,30 @@ var b = parseInt(prompt('Введите число b'));
    function multiply(a, b) {
       return a * b;
       }
+
+  var a = parseInt(prompt('Введите число a'));  
+  var b = parseInt(prompt('Введите число b'));
   c = multiply(a, b);
   alert(c);
 
-//ЗАДАНИЕ №6
+//ЗАДАНИЕ №6 (используем и вызываем арифметические функции из задания 5)
 function mathOperation(arg1, arg2, operation){
 switch(operation){
-   case '+':
-   return arg1 + arg2;
-   case '-':
-   return arg1 - arg2;
-   case '*':
-   return arg1 * arg2;
-   case '/':
-   return arg1 / arg2;
+   case 'plus':
+   return plus(arg1, arg2);
+   break;
+   case 'minus':
+   return minus(arg1, arg2);
+   break;
+   case 'multiply':
+   return multiply(arg1, arg2);
+   break;
+   case 'divide':
+   return divide(arg1, arg2);
+   break;
 }
 }
-c =  mathOperation(7, 4, '-' );
+c =  mathOperation(7, 4, 'divide');
 alert(c);
 
 //ЗАДАИЕ №7 
@@ -128,6 +132,18 @@ alert (null > 0); //false
 alert(null == 0); //false - значения undefined и null ни к еему не приодятся, они равны меду собой и не равны ничему другому. поэтоу выражениие ложно
 alert(null >= 0); //true -  сравнение преобразует null в число 0, поэтому выражение истинно, а null > 0 - ложно. 
 
-   
-
-
+//ЗАДАНИЕ №8
+function power(val, pow)
+	{
+		if ((val == 0) && (pow != 0))
+		return 0;
+		else if (pow == 0)
+		return 1;
+		else if (pow < 0)
+		return power(1/val, -pow);
+		else
+		return val * power(val, pow-1); //3=3*pow
+  
+	}
+  c = power(2, 0); 
+	alert (c);
