@@ -1,0 +1,338 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Шахматная доска</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://anatolykulikov.ru/demo/geekbrains/js/lesson_5/script.js"
+    />
+  </head>
+  <body>
+    <h1>Шахматная доска JavaScript</h1>
+    <script src="main.js"></script>
+    <h1>Шахматная доска на HTML/CSS</h1>
+    <table style="margin: 0 auto">
+      <thead>
+        <th class="td-letters"></th>
+        <th class="td-letters">A</th>
+        <th class="td-letters">B</th>
+        <th class="td-letters">C</th>
+        <th class="td-letters">D</th>
+        <th class="td-letters">E</th>
+        <th class="td-letters">F</th>
+        <th class="td-letters">G</th>
+        <th class="td-letters">H</th>
+        <th class="td-letters"></th>
+      </thead>
+      <tr>
+        <th>8</th>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/rb.svg"
+            alt="Черная ладья"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/nb.svg"
+            alt="Черный конь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/bb.svg"
+            alt="Черный слон"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/qb.svg"
+            alt="Черный ферзь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/kb.svg"
+            alt="Черный король"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/bb.svg"
+            alt="Черный слон"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/nb.svg"
+            alt="Черный конь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/rb.svg"
+            alt="Черная ладья"
+          />
+        </td>
+        <th style="transform: rotate(180deg)">8</th>
+      </tr>
+      <tr>
+        <th>7</th>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pb.svg"
+            alt="Черная пешка"
+          />
+        </td>
+        <th style="transform: rotate(180deg)">7</th>
+      </tr>
+      <tr>
+        <th>6</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th style="transform: rotate(180deg)">6</th>
+      </tr>
+      <tr>
+        <th>5</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th style="transform: rotate(180deg)">5</th>
+      </tr>
+      <tr>
+        <th>4</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th style="transform: rotate(180deg)">4</th>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th style="transform: rotate(180deg)">3</th>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/pw.svg"
+            alt="Белая пешка"
+          />
+        </td>
+        <th style="transform: rotate(180deg)">2</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/nw.svg"
+            alt="Белая ладья"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/nw.svg"
+            alt="Белый конь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/bw.svg"
+            alt="Белый слон"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/qw.svg"
+            alt="Белый ферзь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/kw.svg"
+            alt="Белый король"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/bw.svg"
+            alt="Белый слон"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/nw.svg"
+            alt="Белый конь"
+          />
+        </td>
+        <td>
+          <img
+            class="img"
+            src="http://chess-board.ru/img/pieces/rw.svg"
+            alt="Белая ладья"
+          />
+        </td>
+        <th style="transform: rotate(180deg)">1</th>
+      </tr>
+      <tfoot>
+        <th></th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
+        <th></th>
+      </tfoot>
+    </table>
+  </body>
+</html>
