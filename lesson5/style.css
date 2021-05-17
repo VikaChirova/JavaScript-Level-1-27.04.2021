@@ -6,11 +6,13 @@ td {
 .img {
   display: block;
   margin: 0 auto;
-  width: 80px;
+  width: 60px;
 }
-.td {
+
+td-letters {
   transform: rotate(180deg);
 }
+
 table tr:nth-child(2n + 1) td:nth-child(2n + 1) {
   background-color: black;
 }
@@ -23,3 +25,17 @@ table tr:nth-child(2n) td:nth-child(2n + 1) {
 table tr:nth-child(2n) td:nth-child(2n) {
   background-color: black;
 }
+/*
+table {
+   font-family: Impact, sans-serif;
+   font-size: 30px;
+   background-color: white;
+   color: #000000;
+}
+td {
+   height: 50px;
+   width: 50px;
+   text-align: center;
+   vertical-align: middle;
+}
+*/
