@@ -1,0 +1,42 @@
+body {
+  height: 1000px;
+}
+#card {
+  width: 1000px;
+  margin: 0 auto;
+}
+.item {
+  width: 234px;
+  height: 283px;
+  margin: 0 auto;
+  border: solid 1px black;
+}
+.item img {
+  width: 150px;
+}
+#card img {
+  width: 60px;
+  height: 60px;
+}
+#card div {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px black;
+}
+#card button {
+  height: 1.5em;
+}
+.buy {
+  margin-top: 15px;
+}
+.head {
+  padding-top: 50px;
+}
+.catalog {
+  margin: 0 auto;
+  width: 910px;
+  min-height: 100%;
+}
+.catalog div {
+  float: left;
+}
