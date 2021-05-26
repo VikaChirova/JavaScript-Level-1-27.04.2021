@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Тетрис</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8ec02580c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="tetris">
+      <div id="tetrisleft">
+        <div id="main"></div>
+      </div>
+      <div id="tetrisright">
+        <div id="header"><b>ТЕТРИС</b></div>
+        <p class="info">
+          <i class="fas fa-arrows-alt-h"></i>: двигать влево/вправо; <br /><i
+            class="fas fa-arrow-circle-up"
+          ></i
+          >: вращать; <br /><i class="fas fa-arrow-circle-down"></i>: опустить
+          ниже; <br />ESC: пауза
+        </p>
+        <p>Следующая фигура:</p>
+        <div id="next"></div>
+        <p class="info" id="tetriscount"></p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
